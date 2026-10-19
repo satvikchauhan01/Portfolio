@@ -772,7 +772,19 @@ p { text-wrap: pretty; }
 /* Secondary projects */
 .more { margin-top: clamp(24px, 4vw, 40px); padding-top: 28px; border-top: 1px solid var(--rule-2); }
 .more-title { margin-bottom: 20px; }
-.more-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.more-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 1100px) { .more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* A filled pill for an event a project was built for. */
+.p-tag {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--hue);
+  color: var(--on-hue);
+  font: 600 .6875rem/1 var(--font-mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
 
 .more-card {
   display: flex;

@@ -204,7 +204,8 @@
         }).join('') + '</div>';
     return '<article class="more-card' + tone(m) + '" data-reveal>' + visual +
       '<div class="more-body">' +
-        '<p class="p-index"><span class="p-num">' + esc(m.index) + '</span><span class="p-status">' + esc(m.title) + '</span></p>' +
+        '<p class="p-index"><span class="p-num">' + esc(m.index) + '</span><span class="p-status">' + esc(m.title) + '</span>' +
+          (m.tag ? '<span class="p-tag">' + esc(m.tag) + '</span>' : '') + '</p>' +
         '<h4>' + esc(m.name) + '</h4>' +
         '<p>' + esc(m.summary) + '</p>' +
         chips(m.stack, 'Technologies') +

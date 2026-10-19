@@ -323,6 +323,22 @@ window.PORTFOLIO = {
   more: [
     {
       index: '05',
+      hue: 'rose',
+      tag: 'IIT Mandi hackathon',
+      shot: {
+        src: 'assets/img/projects/cardiolens-analysis.webp',
+        w: 1440, h: 810,
+        label: 'CardioLens · Analysis',
+        alt: 'CardioLens analysis page: patient inputs, a 3D heart with the coronary arteries coloured by estimated risk, and the model estimate for each artery.'
+      },
+      name: 'CardioLens',
+      title: 'Coronary risk prediction with a 3D heart',
+      summary: 'Built for the Multimodal AI Hackathon 2026 at IIT Mandi, in the cardiovascular risk track. Four scikit-learn models estimate the risk of coronary artery disease and of narrowing in each of three arteries from 54 clinical inputs. The app colours those arteries on an interactive 3D heart and explains every estimate with SHAP. The overall model reaches a cross-validated ROC-AUC of 0.917.',
+      stack: ['React', 'TypeScript', 'three.js', 'FastAPI', 'scikit-learn', 'SHAP', 'Docker'],
+      links: { github: 'https://github.com/satvikchauhan01/CardioLens' }
+    },
+    {
+      index: '06',
       hue: 'orange',
       shot: {
         src: 'assets/img/projects/hop-home.webp',
@@ -340,7 +356,7 @@ window.PORTFOLIO = {
       }
     },
     {
-      index: '06',
+      index: '07',
       hue: 'green',
       logos: ['Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS'],
       name: 'MedAssist',
@@ -365,6 +381,18 @@ window.PORTFOLIO = {
     //   location: '',        // optional
     //   points: ['', '']     // 2 to 4 concrete contributions
     // },
+    {
+      org: 'IIT Mandi',
+      role: 'Multimodal AI Hackathon 2026',
+      type: 'Hackathon',
+      hue: 'rose',
+      dates: 'Oct 2026',
+      location: '',
+      points: [
+        'Took part in Track A, Cardiovascular Risk Visualization and Prediction.',
+        'Built CardioLens: per-artery coronary risk models, an interactive 3D heart and SHAP explanations, with a five-page project report.'
+      ]
+    },
     {
       org: 'Lovely Professional University',
       role: 'B.Tech, Computer Science and Engineering',
@@ -414,11 +442,11 @@ window.PORTFOLIO = {
   /* ------------------------------------------------------------------ */
   skills: [
     { k: 'Languages', hue: 'orange', v: ['JavaScript', 'TypeScript', 'Go', 'C++', 'Java', 'Python', 'C', 'SQL'] },
-    { k: 'Backend', hue: 'blue', v: ['Node.js', 'Express', 'Fastify', 'REST APIs', 'WebSockets', 'Server-Sent Events', 'JWT', 'OAuth'] },
-    { k: 'Frontend', hue: 'violet', v: ['React', 'Next.js', 'Tailwind CSS', 'HTML', 'CSS'] },
+    { k: 'Backend', hue: 'blue', v: ['Node.js', 'Express', 'Fastify', 'FastAPI', 'REST APIs', 'WebSockets', 'Server-Sent Events', 'JWT', 'OAuth'] },
+    { k: 'Frontend', hue: 'violet', v: ['React', 'Next.js', 'Tailwind CSS', 'three.js', 'HTML', 'CSS'] },
     { k: 'Databases', hue: 'teal', v: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Prisma'] },
     { k: 'Cloud and DevOps', hue: 'amber', v: ['AWS', 'Docker', 'Kubernetes', 'GitHub Actions', 'Prometheus', 'Grafana', 'Cloudflare Workers'] },
-    { k: 'AI', hue: 'rose', v: ['Gemini API', 'RAG', 'Embeddings', 'Vector search'] },
+    { k: 'AI and ML', hue: 'rose', v: ['Gemini API', 'RAG', 'Embeddings', 'Vector search', 'scikit-learn', 'SHAP'] },
     { k: 'Testing and tools', hue: 'green', v: ['Vitest', 'Playwright', 'Supertest', 'Git', 'Linux'] }
   ],
 
@@ -448,6 +476,7 @@ window.PORTFOLIO = {
     'AWS': 'aws', 'Docker': 'docker', 'Docker Compose': 'docker', 'Kubernetes': 'kubernetes',
     'GitHub Actions': 'githubactions', 'Prometheus': 'prometheus', 'Cloudflare Workers': 'cloudflareworkers',
     'Grafana': 'grafana', 'Loki': 'grafana', 'Tempo': 'grafana', 'OpenTelemetry': 'opentelemetry',
-    'Vitest': 'vitest', 'Playwright': 'playwright', 'Git': 'git', 'Linux': 'linux'
+    'Vitest': 'vitest', 'Playwright': 'playwright', 'Git': 'git', 'Linux': 'linux',
+    'FastAPI': 'fastapi', 'three.js': 'threejs', 'scikit-learn': 'scikitlearn'
   }
 };
